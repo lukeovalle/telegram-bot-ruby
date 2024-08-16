@@ -1,0 +1,7 @@
+module Telegram
+  module Bot
+    module Types
+      MessageOrigin: untyped
+    end
+  end
+end

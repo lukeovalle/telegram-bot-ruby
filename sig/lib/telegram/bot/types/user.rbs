@@ -1,0 +1,19 @@
+module Telegram
+  module Bot
+    module Types
+      class User < Base
+        attr_accessor id: Integer
+        attr_accessor is_bot: bool
+        attr_accessor first_name: String
+        attr_accessor last_name: String?
+        attr_accessor username: String?
+        attr_accessor language_code: String?
+        attr_accessor is_premium: true?
+        attr_accessor added_to_attachment_menu: true?
+        attr_accessor can_join_groups: bool?
+        attr_accessor can_read_all_group_messages: bool?
+        attr_accessor supports_inline_queries: bool?
+      end
+    end
+  end
+end

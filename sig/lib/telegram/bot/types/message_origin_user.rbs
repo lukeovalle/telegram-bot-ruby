@@ -1,0 +1,11 @@
+module Telegram
+  module Bot
+    module Types
+      class MessageOriginUser < Base
+        attr_accessor type: 'user'
+        attr_accessor date: Integer
+        attr_accessor sender_user: User
+      end
+    end
+  end
+end

@@ -1,0 +1,10 @@
+module Telegram
+  module Bot
+    module Types
+      class ReactionTypeCustomEmoji < Base
+        attr_accessor type: "custom_emoji"
+        attr_accessor custom_emoji_id: String
+      end
+    end
+  end
+end

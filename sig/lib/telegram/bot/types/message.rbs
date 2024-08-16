@@ -1,0 +1,89 @@
+module Telegram
+  module Bot
+    module Types
+      class Message < Base
+        attr_accessor message_id: Integer
+        attr_accessor message_thread_id: Integer?
+        attr_accessor from: User?
+        attr_accessor sender_chat: Chat?
+        attr_accessor date: Integer
+        attr_accessor chat: Chat
+        attr_accessor forward_origin: # MessageOrigin?
+          (MessageOriginUser |
+            MessageOriginHiddenUser |
+            MessageOriginChat |
+            MessageOriginChannel)?
+        attr_accessor is_topic_message: true?
+        attr_accessor is_automatic_forward: true?
+        attr_accessor reply_to_message: Message?
+        attr_accessor external_reply: ExternalReplyInfo?
+        attr_accessor quote: TextQuote?
+        attr_accessor via_bot: User?
+        attr_accessor edit_date: Integer?
+        attr_accessor has_protected_content: true?
+        attr_accessor media_group_id: String?
+        attr_accessor author_signature: String?
+        attr_accessor text: String?
+        attr_accessor entities: Array[MessageEntity]?
+        attr_accessor link_preview_options: LinkPreviewOptions?
+        attr_accessor animation: Animation?
+        attr_accessor audio: Audio?
+        attr_accessor document: Document?
+        attr_accessor photo: Array[PhotoSize]?
+        attr_accessor sticker: Sticker?
+        attr_accessor story: Story?
+        attr_accessor video: Video?
+        attr_accessor video_note: VideoNote?
+        attr_accessor voice: Voice?
+        attr_accessor caption: String?
+        attr_accessor caption_entities: Array[MessageEntity]?
+        attr_accessor has_media_spoiler: true?
+        attr_accessor contact: Contact?
+        attr_accessor dice: Dice?
+        attr_accessor game: Game?
+        attr_accessor poll: Poll?
+        attr_accessor venue: Venue?
+        attr_accessor location: Location?
+        attr_accessor new_chat_members: Array[User]?
+        attr_accessor left_chat_member: User?
+        attr_accessor new_chat_title: String?
+        attr_accessor new_chat_photo: Array[PhotoSize]?
+        attr_accessor delete_chat_photo: true?
+        attr_accessor group_chat_created: true?
+        attr_accessor supergroup_chat_created: true?
+        attr_accessor channel_chat_created: true?
+        attr_accessor message_auto_delete_timer_changed: MessageAutoDeleteTimerChanged?
+        attr_accessor migrate_to_chat_id: Integer?
+        attr_accessor migrate_from_chat_id: Integer?
+        attr_accessor pinned_message: MaybeInaccessibleMessage?
+        attr_accessor invoice: Invoice?
+        attr_accessor successful_payment: SuccessfulPayment?
+        attr_accessor users_shared: UsersShared?
+        attr_accessor chat_shared: ChatShared?
+        attr_accessor connected_website: String?
+        attr_accessor write_access_allowed: WriteAccessAllowed?
+        attr_accessor passport_data: PassportData?
+        attr_accessor proximity_alert_triggered: ProximityAlertTriggered?
+        attr_accessor forum_topic_created: ForumTopicCreated?
+        attr_accessor forum_topic_edited: ForumTopicEdited?
+        attr_accessor forum_topic_closed: ForumTopicClosed?
+        attr_accessor forum_topic_reopened: ForumTopicReopened?
+        attr_accessor general_forum_topic_hidden: GeneralForumTopicHidden?
+        attr_accessor general_forum_topic_unhidden: GeneralForumTopicUnhidden?
+        attr_accessor giveaway_created: GiveawayCreated?
+        attr_accessor giveaway: Giveaway?
+        attr_accessor giveaway_winners: GiveawayWinners?
+        attr_accessor giveaway_completed: GiveawayCompleted?
+        attr_accessor video_chat_scheduled: VideoChatScheduled?
+        attr_accessor video_chat_started: VideoChatStarted?
+        attr_accessor video_chat_ended: VideoChatEnded?
+        attr_accessor video_chat_participants_invited: VideoChatParticipantsInvited?
+        attr_accessor web_app_data: WebAppData?
+        attr_accessor reply_markup: InlineKeyboardMarkup?
+
+        alias to_s text
+      end
+
+    end
+  end
+end

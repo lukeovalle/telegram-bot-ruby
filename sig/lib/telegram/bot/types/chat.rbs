@@ -1,0 +1,44 @@
+module Telegram
+  module Bot
+    module Types
+      class Chat < Base
+        attr_accessor id: Integer
+        attr_accessor type: String
+        attr_accessor title: String?
+        attr_accessor username: String?
+        attr_accessor first_name: String?
+        attr_accessor last_name: String?
+        attr_accessor is_forum: true?
+        attr_accessor photo: ChatPhoto?
+        attr_accessor active_usernames: Array[String]?
+        attr_accessor available_reactions: Array[untyped]? # todo reemplazar por ReactionType
+        attr_accessor accent_color_id: Integer?
+        attr_accessor background_custom_emoji_id: String?
+        attr_accessor profile_accent_color_id: Integer?
+        attr_accessor profile_background_custom_emoji_id: String?
+        attr_accessor emoji_status_custom_emoji_id: String?
+        attr_accessor emoji_status_expiration_date: Integer?
+        attr_accessor bio: String?
+        attr_accessor has_private_forwards: true?
+        attr_accessor has_restricted_voice_and_video_messages: true?
+        attr_accessor join_to_send_messages: true?
+        attr_accessor join_by_request: true?
+        attr_accessor description: String?
+        attr_accessor invite_link: String?
+        attr_accessor pinned_message: Message?
+        attr_accessor permissions: ChatPermissions?
+        attr_accessor slow_mode_delay: Integer?
+        attr_accessor message_auto_delete_time: Integer?
+        attr_accessor has_aggressive_anti_spam_enabled: true?
+        attr_accessor has_hidden_members: true?
+        attr_accessor has_protected_content: true?
+        attr_accessor has_visible_history: true?
+        attr_accessor sticker_set_name: String?
+        attr_accessor can_set_sticker_set: true?
+        attr_accessor linked_chat_id: Integer?
+        attr_accessor location: ChatLocation?
+
+      end
+    end
+  end
+end

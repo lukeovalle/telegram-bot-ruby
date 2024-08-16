@@ -1,0 +1,13 @@
+module Telegram
+  module Bot
+    module Types
+      class MessageOriginChannel < Base
+      attr_accessor type: 'channel'
+      attr_accessor date: Integer
+      attr_accessor chat: Chat
+      attr_accessor message_id: Integer
+      attr_accessor author_signature: String?
+      end
+    end
+  end
+end

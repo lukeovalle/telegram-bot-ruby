@@ -1,0 +1,11 @@
+module Telegram
+  module Bot
+    module Types
+      class ChatLocation < Base
+        attr_accessor location: Location
+        attr_accessor address: String
+      end
+
+    end
+  end
+end
