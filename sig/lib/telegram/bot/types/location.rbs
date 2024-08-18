@@ -2,12 +2,12 @@ module Telegram
   module Bot
     module Types
       class Location < Base
-        attr_accessor longitude: Float
-        attr_accessor latitude: Float
-        attr_accessor horizontal_accuracy: Float?
-        attr_accessor live_period: Integer?
-        attr_accessor heading: Integer?
-        attr_accessor proximity_alert_radius: Integer?
+        attr_reader longitude: Float
+        attr_reader latitude: Float
+        attr_reader horizontal_accuracy: Float?
+        attr_reader live_period: Integer?
+        attr_reader heading: Integer?
+        attr_reader proximity_alert_radius: Integer?
       end
     end
   end

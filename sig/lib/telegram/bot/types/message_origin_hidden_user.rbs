@@ -2,9 +2,9 @@ module Telegram
   module Bot
     module Types
       class MessageOriginHiddenUser < Base
-        attr_accessor type: 'hidden_user'
-        attr_accessor date: Integer
-        attr_accessor sender_user_name: String
+        attr_reader type: 'hidden_user'
+        attr_reader date: Integer
+        attr_reader sender_user_name: String
       end
     end
   end

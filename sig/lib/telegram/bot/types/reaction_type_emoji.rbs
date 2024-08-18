@@ -2,8 +2,8 @@ module Telegram
   module Bot
     module Types
       class ReactionTypeEmoji < Base
-        attr_accessor type: "emoji"
-        attr_accessor emoji: String
+        attr_reader type: "emoji"
+        attr_reader emoji: String
       end
     end
   end

@@ -2,10 +2,10 @@ module Telegram
   module Bot
     module Types
       class ChatPhoto < Base
-        attr_accessor small_file_id: String
-        attr_accessor small_file_unique_id: String
-        attr_accessor big_file_id: String
-        attr_accessor big_file_unique_id: String
+        attr_reader small_file_id: String
+        attr_reader small_file_unique_id: String
+        attr_reader big_file_id: String
+        attr_reader big_file_unique_id: String
       end
     end
   end

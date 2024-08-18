@@ -1,7 +1,7 @@
 module Telegram
   module Bot
     module Types
-      MessageOrigin: untyped
+      MessageOrigin: MessageOriginUser | MessageOriginHiddenUser | MessageOriginChat | MessageOriginChannel
     end
   end
 end

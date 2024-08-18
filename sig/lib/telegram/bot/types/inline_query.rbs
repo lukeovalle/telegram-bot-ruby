@@ -1,0 +1,16 @@
+module Telegram
+  module Bot
+    module Types
+      class InlineQuery < Base
+        attr_reader id: String
+        attr_reader from: User
+        attr_reader query: String
+        attr_reader offset: String
+        attr_reader chat_type: String?
+        attr_reader location: Location?
+
+        alias to_s query
+      end
+    end
+  end
+end

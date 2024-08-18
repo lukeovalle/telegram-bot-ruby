@@ -1,0 +1,15 @@
+module Telegram
+  module Bot
+    module Types
+      class CallbackQuery < Base
+        attr_reader id: String
+        attr_reader from: User
+        attr_reader message: (Message | InaccessibleMessage)?
+        attr_reader inline_message_id: String?
+        attr_reader chat_instance: String
+        attr_reader data: String?
+        attr_reader game_short_name: String?
+      end
+    end
+  end
+end

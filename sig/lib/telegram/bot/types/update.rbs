@@ -2,27 +2,27 @@ module Telegram
   module Bot
     module Types
       class Update < Base
-        attr_accessor update_id: Integer
-        attr_accessor message: Message?
-        attr_accessor edited_message: Message?
-        attr_accessor channel_post: Message?
-        attr_accessor edited_channel_post: Message?
-        attr_accessor message_reaction: MessageReactionUpdated?
-        attr_accessor message_reaction_count: MessageReactionCountUpdated?
-        attr_accessor inline_query: InlineQuery?
-        attr_accessor chosen_inline_result: ChosenInlineResult?
-        attr_accessor callback_query: CallbackQuery?
-        attr_accessor shipping_query: ShippingQuery?
-        attr_accessor pre_checkout_query: PreCheckoutQuery?
-        attr_accessor poll: Poll?
-        attr_accessor poll_answer: PollAnswer?
-        attr_accessor my_chat_member: ChatMemberUpdated?
-        attr_accessor chat_member: ChatMemberUpdated?
-        attr_accessor chat_join_request: ChatJoinRequest?
-        attr_accessor chat_boost: ChatBoostUpdated?
-        attr_accessor removed_chat_boost: ChatBoostRemoved?
+        attr_reader update_id: Integer
+        attr_reader message: Message?
+        attr_reader edited_message: Message?
+        attr_reader channel_post: Message?
+        attr_reader edited_channel_post: Message?
+        attr_reader message_reaction: MessageReactionUpdated?
+        attr_reader message_reaction_count: MessageReactionCountUpdated?
+        attr_reader inline_query: InlineQuery?
+        attr_reader chosen_inline_result: ChosenInlineResult?
+        attr_reader callback_query: CallbackQuery?
+        attr_reader shipping_query: ShippingQuery?
+        attr_reader pre_checkout_query: PreCheckoutQuery?
+        attr_reader poll: Poll?
+        attr_reader poll_answer: PollAnswer?
+        attr_reader my_chat_member: ChatMemberUpdated?
+        attr_reader chat_member: ChatMemberUpdated?
+        attr_reader chat_join_request: ChatJoinRequest?
+        attr_reader chat_boost: ChatBoostUpdated?
+        attr_reader removed_chat_boost: ChatBoostRemoved?
 
-        def current_message: -> Message?
+        def current_message: -> Base?
       end
     end
   end

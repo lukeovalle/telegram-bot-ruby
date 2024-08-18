@@ -2,11 +2,11 @@ module Telegram
   module Bot
     module Types
       class MessageOriginChannel < Base
-      attr_accessor type: 'channel'
-      attr_accessor date: Integer
-      attr_accessor chat: Chat
-      attr_accessor message_id: Integer
-      attr_accessor author_signature: String?
+      attr_reader type: 'channel'
+      attr_reader date: Integer
+      attr_reader chat: Chat
+      attr_reader message_id: Integer
+      attr_reader author_signature: String?
       end
     end
   end

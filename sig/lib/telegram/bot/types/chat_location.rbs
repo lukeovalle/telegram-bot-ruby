@@ -2,8 +2,8 @@ module Telegram
   module Bot
     module Types
       class ChatLocation < Base
-        attr_accessor location: Location
-        attr_accessor address: String
+        attr_reader location: Location
+        attr_reader address: String
       end
 
     end
