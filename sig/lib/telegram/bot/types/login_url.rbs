@@ -1,0 +1,12 @@
+module Telegram
+  module Bot
+    module Types
+      class LoginUrl < Base
+          attr_reader url: String
+          attr_reader forward_text: String?
+          attr_reader bot_username: String?
+          attr_reader request_write_access: bool?
+      end
+    end
+  end
+end

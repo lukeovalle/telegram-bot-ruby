@@ -1,0 +1,10 @@
+module Telegram
+  module Bot
+    module Types
+      class Dice < Base
+          attr_reader emoji: String
+          attr_reader value: Integer
+      end
+    end
+  end
+end

@@ -1,0 +1,18 @@
+module Telegram
+  module Bot
+    module Types
+      class InlineKeyboardButton < Base
+          attr_reader text: String
+          attr_reader url: String?
+          attr_reader callback_data: String?
+          attr_reader web_app: WebAppInfo?
+          attr_reader login_url: LoginUrl?
+          attr_reader switch_inline_query: String?
+          attr_reader switch_inline_query_current_chat: String?
+          attr_reader switch_inline_query_chosen_chat: SwitchInlineQueryChosenChat?
+          attr_reader callback_game: CallbackGame?
+          attr_reader pay: bool?
+      end
+    end
+  end
+end

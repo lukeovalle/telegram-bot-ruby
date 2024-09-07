@@ -1,0 +1,15 @@
+module Telegram
+  module Bot
+    module Types
+      class KeyboardButton < Base
+          attr_reader text: String
+          attr_reader request_users: KeyboardButtonRequestUsers?
+          attr_reader request_chat: KeyboardButtonRequestChat?
+          attr_reader request_contact: bool?
+          attr_reader request_location: bool?
+          attr_reader request_poll: KeyboardButtonPollType?
+          attr_reader web_app: WebAppInfo?
+      end
+    end
+  end
+end

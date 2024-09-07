@@ -1,0 +1,16 @@
+module Telegram
+  module Bot
+    module Types
+      class ReplyKeyboardMarkup < Base
+        attr_reader keyboard: Array[Array[KeyboardButton]]
+        attr_reader is_persistent: bool?
+        attr_reader resize_keyboard: bool?
+        attr_reader one_time_keyboard: bool?
+        attr_reader input_field_placeholder: String?
+        attr_reader selective: bool?
+
+        def to_compact_hash: () -> untyped
+      end
+    end
+  end
+end

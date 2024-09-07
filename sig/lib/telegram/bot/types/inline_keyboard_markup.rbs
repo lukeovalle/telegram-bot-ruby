@@ -1,0 +1,11 @@
+module Telegram
+  module Bot
+    module Types
+      class InlineKeyboardMarkup < Base
+          attr_reader inline_keyboard: Array[Array[InlineKeyboardButton]]
+
+          def to_compact_hash: () -> untyped
+      end
+    end
+  end
+end

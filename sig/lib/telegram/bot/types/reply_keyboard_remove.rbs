@@ -1,0 +1,10 @@
+module Telegram
+  module Bot
+    module Types
+      class ReplyKeyboardRemove < Base
+          attr_reader remove_keyboard: true
+          attr_reader selective: bool?
+      end
+    end
+  end
+end

@@ -1,0 +1,23 @@
+module Telegram
+  module Bot
+    module Types
+      class ChatAdministratorRights < Base
+          attr_reader is_anonymous: bool
+          attr_reader can_manage_chat: bool
+          attr_reader can_delete_messages: bool
+          attr_reader can_manage_video_chats: bool
+          attr_reader can_restrict_members: bool
+          attr_reader can_promote_members: bool
+          attr_reader can_change_info: bool
+          attr_reader can_invite_users: bool
+          attr_reader can_post_messages: bool?
+          attr_reader can_edit_messages: bool?
+          attr_reader can_pin_messages: bool?
+          attr_reader can_post_stories: bool?
+          attr_reader can_edit_stories: bool?
+          attr_reader can_delete_stories: bool?
+          attr_reader can_manage_topics: bool?
+      end
+    end
+  end
+end

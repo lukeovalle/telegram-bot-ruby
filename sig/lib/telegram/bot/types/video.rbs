@@ -1,0 +1,17 @@
+module Telegram
+  module Bot
+    module Types
+      class Video < Base
+          attr_reader file_id: String
+          attr_reader file_unique_id: String
+          attr_reader width: Integer
+          attr_reader height: Integer
+          attr_reader duration: Integer
+          attr_reader thumbnail: PhotoSize?
+          attr_reader file_name: String?
+          attr_reader mime_type: String?
+          attr_reader file_size: Integer?
+      end
+    end
+  end
+end

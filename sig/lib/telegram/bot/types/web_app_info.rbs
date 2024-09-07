@@ -1,0 +1,9 @@
+module Telegram
+  module Bot
+    module Types
+      class WebAppInfo < Base
+        attr_reader url: String
+      end
+    end
+  end
+end

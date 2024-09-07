@@ -1,0 +1,23 @@
+module Telegram
+  module Bot
+    module Types
+      class Sticker < Base
+          attr_reader file_id: String
+          attr_reader file_unique_id: String
+          attr_reader type: String
+          attr_reader width: Integer
+          attr_reader height: Integer
+          attr_reader is_animated: bool
+          attr_reader is_video: bool
+          attr_reader thumbnail: PhotoSize?
+          attr_reader emoji: String?
+          attr_reader set_name: String?
+          attr_reader premium_animation: File?
+          attr_reader mask_position: MaskPosition?
+          attr_reader custom_emoji_id: String?
+          attr_reader needs_repainting: true?
+          attr_reader file_size: Integer?
+      end
+    end
+  end
+end
